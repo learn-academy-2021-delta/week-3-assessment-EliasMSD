@@ -31,7 +31,20 @@ describe("fibonacci", ()=>{
 
 
 // b) Create the function that makes the test pass.
-
+/*
+Algorithm->find an array that display the sequence of fibonacci numbers
+            Input any number greater than 2
+            Output->an array of fibonacci sequence of a given number
+                declare three variables num1,num2,nextNum
+                create a function 
+                create an empty array
+                if number less than 2 return number
+                else use for loop
+                nextNum=num1+num2
+                num1=num2
+                num2=nextNum
+                return sequence
+*/
 let num1=1,num2=1,nextNum
 let fibonacci=(number)=>{
     let sequence=[]
@@ -68,6 +81,15 @@ var fullArr2 = ["hello", 7, 23, -823, false, 78, null, "67", 6, "number"]
 
 
 // b) Create the function that makes the test pass.
+
+/*
+Algorithm fillter of odd numbers from an array that contain different data types
+    Input->an array containing different data types
+    Output->an array of odd numbers sorted in ascending order
+        filter the array using typeof operator and modules operator
+        use babble sort(pass comparator function)
+        return array
+*/
 let oddNumbers=array=>array.filter((value)=>typeof(value)==="number")
 .filter((item)=>item%2!==0).sort((a,b)=>a-b)
 
@@ -96,6 +118,16 @@ var numbersToAdd3 = []
 // Expected output: []
 
 // b) Create the function that makes the test pass.
+/*
+Algorithm->find an array that contain accumulating sum of a given array
+    Input->an array
+    Output->an array of the same size containing accumulated sum of an array
+        create function
+        if array length is zero return empty array
+        use for loop
+        arry[i]equals to array[i-1]plus array[i]
+        return array
+*/
 let sumOfconsecutiveEle=(array5)=>{
     if(array5.length==0)return []
 for (let i = 1; i < array5.length; i++) {
